@@ -1,0 +1,60 @@
+.container {
+    max-width: 700px;
+    background: #fff;
+    padding: 30px;
+    margin: 80px auto;
+    border-radius: 4px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.container h1 {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+.container svg {
+    margin-right: 5px;
+}
+
+form {
+    margin-top: 30px;
+    display: flex;
+}
+form input {
+    flex: 1;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 17px;
+}
+
+.submitButton {
+    background: #0d2636;
+    border: 0;
+    border-radius: 4px;
+    margin-left: 10px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    margin-top: 20px; 
+}
+
+ul li {
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+ul li + li{
+    border-top: 1px solid #eeee;
+}
+
+ul a {
+    color: #0d2636;
+}
