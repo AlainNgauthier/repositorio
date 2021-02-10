@@ -1,4 +1,5 @@
 import React , { useState, useCallback } from 'react';
+import { Link } from 'react-router-dom';
 import { FaGithub, FaPlus, FaBars } from 'react-icons/fa';
 import './main.css';
 
@@ -68,9 +69,9 @@ export default function Main(){
         {repositorios.map((repo, key) => (
           <li key={key}>
             <span>{repo.name}</span>
-            <a href="/">
+            <Link to={`/repositorio/${encodeURIComponent(repo.name)}`}>
               <FaBars size={20}/>
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
