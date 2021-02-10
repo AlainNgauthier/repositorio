@@ -44,7 +44,7 @@ export default function Main(){
         
         <input 
           type="text" 
-          placeholder="Adcionar repositório"
+          placeholder="Adicionar repositório"
           value={newRepo}
           onChange={handleInputChange}/>
         
