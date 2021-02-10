@@ -18,7 +18,18 @@ export default function Main(){
       e.preventDefault();
       //console.log(newRepo);
       async function submit() {
+
+        if(newRepo === ''){
+          throw new Error('Indica um repositório')
+        }
+
         const response = await api.get(`repos/${newRepo}`);
+
+        const hasRepo = repositorios.find(repo => repo.name === newRepo);
+        if(hasRepo){
+          throw new Error('Repositorio duplicado');
+        }
+
         const data = {
           name: response.data.full_name,
         }
